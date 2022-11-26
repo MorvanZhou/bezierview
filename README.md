@@ -18,7 +18,7 @@ points = [[50, 350], [250, 100], [330, 350], [450, 100]]
 bezierview.animate(points)
 ```
 
-![auto](https://github.com/MorvanZhou/sudoku/raw/main/curve.png)
+![animation](https://github.com/MorvanZhou/sudoku/raw/main/curve.png)
 
 # View static curve
 
@@ -29,4 +29,4 @@ points = [[50, 350], [250, 100], [330, 350], [450, 100]]
 bezierview.show(points)
 ```
 
-![human](https://github.com/MorvanZhou/sudoku/raw/main/curve.png)
+![pic](https://github.com/MorvanZhou/sudoku/raw/main/curve.png)
