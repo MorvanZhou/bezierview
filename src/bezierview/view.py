@@ -1,5 +1,5 @@
-import typing as tp
 import tkinter as tk
+import typing as tp
 
 from bezierview.bezier import bezier
 
@@ -40,8 +40,8 @@ class Segment(Line):
         self.canvas.coords(self.canvas_line, x0, y0, x1, y1)
 
     def ratio_point(self, percentage: float):
-        return (self.start[0] - self.end[0]) * percentage + self.end[0],\
-            (self.start[1] - self.end[1]) * percentage + self.end[1]
+        return (self.start[0] - self.end[0]) * percentage + self.end[0], \
+               (self.start[1] - self.end[1]) * percentage + self.end[1]
 
 
 class OvalSegment(Segment):
@@ -113,7 +113,7 @@ class Draw(tk.Tk):
             return flat_points
         new_flat_points = []
         for i in range(n_point - 1):
-            line = OvalSegment(self.canvas, flat_points[i*2:i*2+4], width=width, dash=dash)
+            line = OvalSegment(self.canvas, flat_points[i * 2:i * 2 + 4], width=width, dash=dash)
             self.lines.append(line)
             new_flat_points.extend(line.ratio_point(ratio))
         if recursive:
@@ -151,6 +151,3 @@ class Draw(tk.Tk):
         self.draw_lines(self.points, recursive=False, ratio=0.5)
         curve = bezier(self.points, dim=self.dim)
         Curve(self.canvas, curve, color="red", width=3)
-
-
-

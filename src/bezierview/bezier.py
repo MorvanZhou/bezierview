@@ -1,8 +1,8 @@
-import typing as tp
 import math
 import operator as op
-from functools import reduce
 import platform
+import typing as tp
+from functools import reduce
 
 _numbers = platform.python_version().split(".")
 

@@ -1,5 +1,5 @@
-from bezierview.view import Draw
 from bezierview.bezier import bezier
+from bezierview.view import Draw
 
 
 def show(points):
