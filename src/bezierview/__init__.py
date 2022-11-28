@@ -12,3 +12,9 @@ def animate(points):
     root = Draw(points)
     root.move()
     root.mainloop()
+
+
+def play():
+    root = Draw([])
+    root.after(1000, root.play)
+    root.mainloop()

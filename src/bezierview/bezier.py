@@ -21,6 +21,7 @@ else:
 
 
 def bezier(flat_points: tp.List[float], dim: int, step: tp.Optional[int] = None) -> tp.List[float]:
+    # flat_points: [x0, y0, x1, y1, x2, y2, ... xn, yn]
     n = len(flat_points) // dim - 1
     if step is None:
         step = n * 10
